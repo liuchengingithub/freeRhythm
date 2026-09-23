@@ -17,6 +17,6 @@ export default defineConfig({
     format: 'es',
   },
   optimizeDeps: {
-    include: ['vexflow', 'tone'],
+    include: ['tone'],
   },
 });
