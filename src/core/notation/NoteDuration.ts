@@ -42,24 +42,6 @@ export function getMeasureTotalDuration(notes: RhythmNote[]): number {
 }
 
 /**
- * 检查是否可以添加音符到小节
- */
-export function canAddNoteToMeasure(
-  currentDuration: number,
-  maxDuration: number,
-  newNoteDuration: number,
-  allowPartial: boolean = false
-): boolean {
-  const totalAfterAdd = currentDuration + newNoteDuration;
-  
-  if (allowPartial) {
-    return totalAfterAdd <= maxDuration;
-  }
-  
-  return Math.abs(totalAfterAdd - maxDuration) < 0.0001 || totalAfterAdd < maxDuration;
-}
-
-/**
  * 获取小节还差多少拍
  */
 export function getMeasureRemaining(currentDuration: number, maxDuration: number): number {

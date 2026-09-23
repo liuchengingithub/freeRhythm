@@ -19,7 +19,6 @@
     "react-dom": "^19.2.8",
     "tone": "^15.1.22",
     "uuid": "^14.0.2",
-    "vexflow": "^5.0.0",
     "zustand": "^5.0.15"
   },
   "devDependencies": {
